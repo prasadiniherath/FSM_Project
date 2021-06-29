@@ -35,9 +35,9 @@
                     <i class="fas fa-file mr-2"></i> 3 new reports
                     <span class="float-right text-muted text-sm">2 days</span>
                 </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-            </div>
+{{--                <div class="dropdown-divider"></div>--}}
+{{--                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>--}}
+{{--            </div>--}}
         </li>
         <li class="nav-item">
             <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
