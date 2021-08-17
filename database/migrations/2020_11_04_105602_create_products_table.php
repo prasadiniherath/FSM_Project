@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->float('sales_price');
             $table->float('labled_price')->nullable();
             $table->float('weight')->nullable();
+            $table->integer('qty')->nullable();
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('categoryID')->on('categories');
             $table->timestamps();

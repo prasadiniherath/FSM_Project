@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePrivilagesTable extends Migration
+class CreateVehiclesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreatePrivilagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('privilages', function (Blueprint $table) {
-            $table->bigIncrements('privilageID');
-            $table->string('privilage_name');
+        Schema::create('vehicles', function (Blueprint $table) {
+            $table->bigIncrements('vehicle_ID');
+            $table->string('vehicle_no')->nullable();
+            $table->string('capacity')->nullable();
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreatePrivilagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('privilages');
+        Schema::dropIfExists('vehicles');
     }
 }
